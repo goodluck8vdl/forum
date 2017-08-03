@@ -2,14 +2,32 @@
 <html>
 <head>
   <title>Workspace</title>
+ 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" >
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-<%= yield %>
+  <header>
+    <div class="main_header clearfix">
+      <div class="wrapper">
+        <div id="logo">
+          <p>Rails Forum</p>
+        </div>
+        <div class="buttons">
+          <%= link_to 'New Post', new_post_path %>
+        </div>
+      </div>
+    </div>
+  </header>
 
+  <div class="wrapper">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  </div>
+  <div class="wrapper">
+    <%= yield %>
+  </div>
 </body>
 </html>
