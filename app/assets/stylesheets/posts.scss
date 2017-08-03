@@ -18,14 +18,17 @@ body {
 }
 .main_header{
     width: 100%;
-    
     background: white;
         #logo {
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 1.2em;
-            font-weight: 700;
             float: left;
+            a{
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 1.2em;
+                font-weight: 700;
+                color: black;
+                text-decoration: none;
+            }
         }
     .buttons {
         float: right;
@@ -67,5 +70,17 @@ body {
         font-size: 0.9em;
         color: #887d7d;;
     }
-    
+}
+
+.post_content{
+    background: white;
+    padding: 2em 5%;
+    border-radius: 0.5em;
+        h1{
+            margin-top: 0;
+            color: #c66161;
+        }
+        p{
+            line-height: 1.5;
+        }
 }
